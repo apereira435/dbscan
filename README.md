@@ -1,4 +1,4 @@
-# dbscan
+# Simple dbscan implementation in c++11 
 
 Simple dbscan implementation in c++11, uses pseudo code as in https://en.wikipedia.org/wiki/DBSCAN
 
