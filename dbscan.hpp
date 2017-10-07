@@ -36,10 +36,6 @@ inline std::vector<int>  rangeQuery(const std::vector<Point> &points,
     for (int p = 0; p < points.size(); ++p) {
         if (q == p)
             continue;
-        if (distanceMatrix[q][p] < 0) {
-            distanceMatrix[p][q] = distance(points[p], points[q]);
-            distanceMatrix[q][p] = distanceMatrix[p][q];
-        }
         if (distanceMatrix[q][p] < eps) {
             neighbors.push_back(p);
         }
